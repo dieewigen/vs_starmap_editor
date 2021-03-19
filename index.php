@@ -138,8 +138,6 @@ while($row = mysqli_fetch_array($db_daten)){
 	$knoten_daten[$row['knoten_id']]=$row;
 }
 
-//print_r($knoten_daten);
-
 //Kanten laden und anzeigen
 $db_daten=mysqli_query($GLOBALS['dbi'], "SELECT * FROM de_basedata_map_kanten WHERE sec_id='$sec_id'");
 echo '<svg data-svg="1" width="1000" height="1000">';
